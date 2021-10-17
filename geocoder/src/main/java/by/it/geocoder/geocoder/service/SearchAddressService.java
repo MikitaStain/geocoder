@@ -23,7 +23,7 @@ public class SearchAddressService implements ISearchServiceAddress {
         final URL googleGeocoding;
         try {
             googleGeocoding = new URL("https://maps.googleapis.com/maps/api/geocode/json?latlng="+coordinate.getLat()
-                    +","+coordinate.getLng()+"&key=AIzaSyDUBngCASYl_wHRz9RzOBjdq5ZiBtGhvgM");
+                    +","+coordinate.getLng()+"&key=");
             return googleGeocoding;
         } catch (MalformedURLException e) {
             throw new IllegalStateException("Неверный адрес",e );

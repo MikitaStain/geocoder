@@ -26,7 +26,7 @@ public class SearchCoordinateService implements ISearchServiceCoordinate {
         final URL googleGeocoding;
         try {
             googleGeocoding = new URL("https://maps.googleapis.com/maps/api/geocode/json?address=" + address.getNumber() +
-                    "%" + address.getStreet() + "%" + address.getCity() + "&key=AIzaSyDUBngCASYl_wHRz9RzOBjdq5ZiBtGhvgM");
+                    "%" + address.getStreet() + "%" + address.getCity() + "&key=");
             return googleGeocoding;
         } catch (MalformedURLException e) {
             throw new IllegalStateException("Неверный адрес");

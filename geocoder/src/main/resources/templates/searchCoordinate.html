@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'Введите нужный адрес!'"/>
+
+<form action="/home/searchCoordinate" method="post">
+    <input type="text" name="number" placeholder="Введите номер дома"><br>
+    <input type="text" name="street" placeholder="Введите название улицы"><br>
+    <input type="text" name="city" placeholder="Введите название города"><br>
+
+    <button type="submit" class="btn btn-success">Найти</button>
+
+</form>
+</body>
+</html>

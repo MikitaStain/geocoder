@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'Нужно выбрать нужный пункт!'"/>
+<form action="/home/searchAddress" method="get">
+    <button type="submit" class="btn btn-success">Поиск адреса по координатам</button>
+
+</form>
+<form action="/home/searchCoordinate" method="get">
+    <button type="submit" class="btn btn-success">Поиск координат по адресу</button>
+
+</form>
+</body>
+</html>
